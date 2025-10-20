@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Home</title>
+<link rel="stylesheet" href="../styles/default.css">
+    </head>
+<body>
+    <div class="top">
+    
+    <div class="header">
+        <nav id="nav">
+        <ul>
+       <li class="nav-left"><a href="../index.html">
+            <div class="myheader">
+            <img src="../photos/CMYK Logo Transparent Colored copy 2.png" width="70px">
+            <h1 id="header_name">Lyanis Barreto Mercado</h1>
+            </div></a></li>
+
+        <li class="nav-right"><a class="nav-right active" href="artwork.html">Art Works</a></li>
+        <li class="nav-right"><a class="nav-right" href="video.html">Videos</a></li>
+        <li class="nav-right"><a class="nav-right" href="character.html">Character Concepts</a></li>
+        <li class="nav-right"><a class="nav-right" href="coding.html">Coding Projects</a></li>
+        </ul>
+        <hr class="hr-nav">
+        </nav>
+    </div>
+    </div>
+    <br>
+    <h1>Art Works</h1>
+<h2>This category contains several artworks I have created, and include a variety like drawings, sculptures, builds, photoshop projects and more. Anything that has some sort of meaning or purpose communicated visually is compiled here. </h2>
+<hr>
+        <div class="row">
+            <div class="art-col-1">
+            <img src="../photos/Chagall Final - 1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img src="../photos/Chagall Final - 3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="art-col-2">
+            <h3 class="art-title">Marc Chagall Sculpture Project - <a class="venix" target="_blank" href="https://venixdesign.myportfolio.com/">Vexin</a></h3>
+            <p>This sculpture was done from a group project in my 3D Design Class at UCF. We titled ourselves as “Venix”, and have taken over a month to recreate Marc Chagall’s painting “The Blue Landscape” into a wooden board. This artwork has been presented at Dr. Phillips, and now resides within the Art Building of the UCF Main Campus.</p>
+            </div>
+        </div>
+        <hr>
+    
+        <div class="row">
+            <div class="art-col-1" >
+            <img id="happy-img" src="../photos/Happy Ending.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="art-col-2">
+            <h3 class="art-title">Happy Ending</h3>
+            <p>The drawing was inspired by a story in the Undertale Fandom. A "what if" story that involved loss, grief, and determination. And while many people love the characters from the story, they don't seem to focus on the ending, or know that it even ended. And it was the rare case that stories like these have happy endings. I wanted to remember that happy ending and hope others will appreciate it.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="row">
+            <div class="art-col-1" >
+            <img id="bone-img" src="../photos/Bone Drawing.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="art-col-2">
+            <h3 class="art-title">Bone Drawing</h3>
+            <p>This artwork allowed me to practice perspective, structure, form, and straight line inspection. It is a simple step that helps me gain an understanding on how to create something from a still-life, which can build up to figure drawings.</p>
+            </div>
+        </div>
+
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+    <div class="mySlides">
+      <img src="../photos/Chagall Final - 1.jpg" class="modal-image">
+       <div class="numbertext">1 / 4</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../photos/Chagall Final - 3.jpg" class="modal-image">
+      <div class="numbertext">2 / 4</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../photos/Happy Ending.jpg" class="modal-image">
+      <div class="numbertext">3 / 4</div>
+    </div>
+
+    <div class="mySlides">
+      <img src="../photos/Bone Drawing.jpeg" class="modal-image">
+      <div class="numbertext">4 / 4</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="lightbox-row">
+     <div class="lightbox-column">
+      <img class="thumbnail" src="../photos/Chagall Final - 1.jpg" onclick="currentSlide(1)" alt="Chagall Sculpture">
+    </div>
+
+     <div class="lightbox-column">
+      <img class="thumbnail" src="../photos/Chagall Final - 3.jpg" onclick="currentSlide(2)" alt="Chagall Sculpture">
+    </div>
+
+    <div class="lightbox-column">
+      <img class="thumbnail" src="../photos/Happy Ending.jpg" onclick="currentSlide(3)" alt="Fan Art">
+    </div>
+
+    <div class="lightbox-column">
+      <img class="thumbnail" src="../photos/Bone Drawing.jpeg" onclick="currentSlide(4)" alt="Bone Art">
+    </div>
+ </div>
+
+    
+
+<script src="../scripts/lightbox.js"></script>
+
+
+</div>
+
+</body>
+</html>
