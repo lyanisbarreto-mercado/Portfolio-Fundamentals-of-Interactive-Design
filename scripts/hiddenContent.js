@@ -2,10 +2,10 @@ var aboutLinks = document.getElementsByClassName('about-links');
     var aboutDes = document.getElementsByClassName('about-des');
     
     function opentab(element, tabname){
-        for(aboutLink of aboutLinks) {
+        for( const aboutLink of aboutLinks) {
             aboutLink.classList.remove("active-link")
         }
-        for(des of aboutDes) {
+        for( const des of aboutDes) {
             des.classList.remove("active-des")
         }
         event.currentTarget.classList.add("active-link");
